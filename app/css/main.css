@@ -632,7 +632,6 @@ html .agency-agents-overview form .form-agent-header span,
 body .agency-agents-overview form .form-agent-header span {
   text-transform: uppercase;
   color: #9e9e9e;
-  font-weight: bold;
   font-size: 12px;
   letter-spacing: 1px;
   display: inline-block;
@@ -803,7 +802,7 @@ body .agency-overview-wrapper {
   position: fixed;
   width: calc(100% - 30px);
   height: calc(100% - 275px);
-  top: 260px;
+  top: 233px;
 }
 html .agency-overview-wrapper .scroll-wrapper,
 body .agency-overview-wrapper .scroll-wrapper {
@@ -812,7 +811,7 @@ body .agency-overview-wrapper .scroll-wrapper {
 }
 html .agency-overview-wrapper .button-wrapper,
 body .agency-overview-wrapper .button-wrapper {
-  margin: 0 -15px 20px -15px;
+  margin: 0 -15px 0 -15px;
 }
 html .agency-overview-wrapper .button-wrapper.sml .btn,
 body .agency-overview-wrapper .button-wrapper.sml .btn {
@@ -822,6 +821,7 @@ body .agency-overview-wrapper .button-wrapper.sml .btn {
 html .agency-wrapper,
 body .agency-wrapper {
   position: fixed;
+  margin: -15px 0 0 0;
 }
 html .agency-wrapper .toggle-wrapper,
 body .agency-wrapper .toggle-wrapper {
