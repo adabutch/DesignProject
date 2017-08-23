@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="designProject" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BriteCore | Design Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
+  <!-- <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script> -->
+  <base href="/">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top" role="navigation">
+    <a class="navbar-brand" href="/">
+      <img src="img/bc-logo.png">
+    </a>
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/view2">Nav One</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nav Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nav Three</a>
+        </li>
+      </ul>
+  </nav>
+
+  <div class="content-wrapper container-fluid">
+    <div ng-view></div>
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <!-- //note: had to modify bs template in tpls below for v4 -->
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

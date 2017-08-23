@@ -1,0 +1,63 @@
+<div ng-include="'views/agency-overview-header.html'"></div>
+
+<div class="agency-overview-wrapper">
+  <div class="row button-wrapper">
+    <div class="col-md-10">
+      <hr>
+    </div>
+
+    <div class="col-md-2">
+      <a ng-if="activeTab === 2" href="/agency/add-license" class="btn btn-add pull-right">
+        <i class="fa fa-plus left" aria-hidden="true"></i>
+        Add License
+      </a>
+
+      <a ng-if="activeTab === 1" href="/agency/add-agent" class="btn btn-add pull-right">
+        <i class="fa fa-plus left" aria-hidden="true"></i>
+        Add Agent
+      </a>
+    </div>
+  </div>
+
+  <div class="agency-wrapper">
+    <div class="row">
+        <div class="toggle-wrapper">
+          <div class="states">
+            <small ng-click="showStates = !showStates">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
+            <ul ng-if="showStates">
+              <li ng-repeat="state in usStates" class="clearfix">
+                <span>{{state}}</span>
+                <div class="toggler">
+                  <input class="toggle" id="{{state}}" type="checkbox">
+                  <label class="toggle-btn" for="{{state}}"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="policies">
+            <small ng-click="showPolicies = !showPolicies">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
+            <ul ng-if="showPolicies">
+              <li ng-repeat="policy in policyTypes" class="clearfix">
+                <span>{{policy}}</span>
+                <div class="toggler">
+                  <input class="toggle" id="{{policy}}" type="checkbox">
+                  <label class="toggle-btn" for="{{policy}}"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content-wrapper">
+          <uib-tabset active="activeTab">
+            <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}">
+              <div ng-include="tab.content"></div>
+            </uib-tab>
+          </uib-tabset>
+        </div>
+    </div>
+  </div>
+
+  <!-- <div class="scroll-wrapper"></div> -->
+</div>

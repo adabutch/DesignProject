@@ -1,0 +1,106 @@
+[
+  {
+    "agencyName": "The IU Bloomington Agency",
+    "states": 2,
+    "agents": 15,
+    "policies": 1,
+    "contact": "Bob Jones",
+    "headquarters": {
+      "city": "Bloomington",
+      "state": "Indiana",
+      "stateAbbr": "IN"
+    },
+    "established": "05/10/17"
+  },
+  {
+    "agencyName": "Agency Two",
+    "states": 5,
+    "agents": 32,
+    "policies": 7,
+    "contact": "Adam Butcher",
+    "headquarters": {
+      "city": "Cocoa Beach",
+      "state": "Florida",
+      "stateAbbr": "FL"
+    },
+    "established": "05/09/17"
+  },
+  {
+    "agencyName": "Dale Cooper's Agency",
+    "states": 3,
+    "agents": 10,
+    "policies": 4,
+    "contact": "Dale Cooper",
+    "headquarters": {
+      "city": "Twin Peaks",
+      "state": "Washington",
+      "stateAbbr": "WA"
+    },
+    "established": "05/08/17"
+  },
+  {
+    "agencyName": "The Black Lodge",
+    "states": 5,
+    "agents": 11,
+    "policies": 5,
+    "contact": "Dougie Jones",
+    "headquarters": {
+      "city": "Twin Peaks",
+      "state": "Washington",
+      "stateAbbr": "WA"
+    },
+    "established": "05/07/17"
+  },
+  {
+    "agencyName": "Agency Five",
+    "states": 1,
+    "agents": 2,
+    "policies": 3,
+    "contact": "Sam Sammy",
+    "headquarters": {
+      "city": "Austin",
+      "state": "Texas",
+      "stateAbbr": "TX"
+    },
+    "established": "05/06/17"
+  },
+  {
+    "agencyName": "Agency Six",
+    "states": 1,
+    "agents": 2,
+    "policies": 3,
+    "contact": "Sam Sammy",
+    "headquarters": {
+      "city": "St. Louis",
+      "state": "Missouri",
+      "stateAbbr": "MO"
+    },
+    "established": "05/05/17"
+  },
+  {
+    "agencyName": "Agency Seven",
+    "states": 1,
+    "agents": 2,
+    "policies": 3,
+    "contact": "Sam Sammy",
+    "headquarters": {
+      "city": "Buxton",
+      "state": "North Carolina",
+      "stateAbbr": "NC"
+    },
+    "established": "05/04/17"
+  },
+  {
+    "agencyName": "Agency Eight",
+    "states": 1,
+    "agents": 2,
+    "policies": 3,
+    "contact": "Sam Sammy",
+    "headquarters": {
+      "city": "Frisco",
+      "state": "North Carolina",
+      "stateAbbr": "NC"
+    },
+    "established": "05/03/17"
+  }
+]

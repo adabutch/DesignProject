@@ -1,0 +1,210 @@
+[
+  {
+    "class": "Producer",
+    "loa": "Accident, Health or Sickness",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Property",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Life",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Personal Lines",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Casualty",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Variable Annuity & Variable Life Products",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Producer",
+    "loa": "Medicare Supplement / Long Term Care",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Travel, Accident & Baggage",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Dental Services",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Pre-Need Life",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Foreign-Military Sales",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Motor Club",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Limited Representative",
+    "loa": "Other - Limited Lines",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Auto Physical Damage",
+    "loa": "Auto Physical Damage",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Broker",
+    "loa": "Broker",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Company/Independent Firm Adjuster",
+    "loa": "Company/Independent Firm Adjuster",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Country Farm Mutual Insurance Agent",
+    "loa": "Country Farm Mutual Insurance Agent",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Auto Physical Damage",
+    "loa": "Auto Physical Damage",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Credit Agent",
+    "loa": "Credit Agent",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Hail Adjuster",
+    "loa": "Hail Adjuster",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Motor Vehicle Damage Appraiser",
+    "loa": "Motor Vehicle Damage Appraiser",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Public Adjuster",
+    "loa": "Public Adjuster",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Self-Employed Insurance Adjuster",
+    "loa": "Self-Employed Insurance Adjuster",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Surplus Lines",
+    "loa": "Surplus Lines",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Title Insurance",
+    "loa": "Title",
+    "exam": true,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  },
+  {
+    "class": "Viatical Settlement Broker",
+    "loa": "Viatical Settlement Broker",
+    "exam": false,
+    "issued": "05/10/17",
+    "expires": "05/10/18",
+    "pdf": "https://www.ann-geophys.net/31/1549/2013/angeo-31-1549-2013.pdf"
+  }
+]

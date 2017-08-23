@@ -1,0 +1,61 @@
+<div ng-include="'views/carrier-overview-header.html'"></div>
+
+<div class="agency-cells-wrapper">
+  <div class="row button-wrapper">
+    <div class="col-md-10">
+      <hr>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/carrier/add-agency" class="btn btn-add pull-right">
+        <i class="fa fa-plus left" aria-hidden="true"></i>
+        Add Agency
+      </a>
+    </div>
+  </div>
+
+  <span class="overview-title">Carrier Agencies</span>
+
+  <div class="filter-wrapper">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <input type="text"
+             class="form-control"
+             placeholder="Search by Agency Name, Contact or HQ"
+             aria-label="Username"
+             aria-describedby="basic-addon1"
+             ng-model="query">
+    </div>
+    <span class="order-by" ng-click="sortBy('established')" ng-show="propertyName === 'established'" ng-class="{active: reverse}">Newest</span>
+    <span class="order-by" ng-click="sortBy('established')" ng-show="propertyName === 'established'" ng-class="{active: !reverse}">Oldest</span>
+  </div>
+
+  <div class="scroll-wrapper">
+    <p ng-if="search.length === 0">No results</p>
+    <div class="agency-cell" ng-repeat="agency in carrierAgencies | filter:search | orderBy:propertyName:reverse">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-4 name-wrapper">
+              <span class="overview-title">Name</span>
+              <h1>{{agency.agencyName}}</h1>
+            </div>
+
+            <div class="col-md-8 meta-wrapper">
+              <span class="overview-title">Information</span>
+              <ul class="bottom-row">
+                <li><strong>Contact:</strong> {{agency.contact}}</li>
+                <li><strong>HQ:</strong> {{agency.headquarters.city}}, {{agency.headquarters.stateAbbr}}</li>
+                <li><strong>Est:</strong> {{agency.established}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <a href="/agency" class="btn btn-view">View<i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div><!-- /.agency-cell -->
+  </div><!-- /.scroll-wrapper -->
+</div><!-- /.agency-cells-wrapper -->

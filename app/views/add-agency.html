@@ -1,0 +1,96 @@
+<div ng-include="'views/carrier-overview-header.html'"></div>
+
+<div class="agency-cells-wrapper">
+  <div class="row">
+    <div class="col-md-9">
+      <hr>
+    </div>
+
+    <div class="col-md-3">
+      <div class="btn-group pull-right" role="group" aria-label="Save and Cancel group">
+        <button type="button" class="btn btn-save">
+          <i class="fa fa-check left" aria-hidden="true"></i>
+          Save
+        </button>
+
+        <button type="button" class="btn btn-cancel">
+          <i class="fa fa-times left" aria-hidden="true"></i>
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <span class="overview-title">Add Agency</span>
+
+  <div class="scroll-wrapper">
+    <div class="agency-cell single">
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput">Agency Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Agency Name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput">Agency Location</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Agency Location">
+            </div>
+
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput">Agency Contact</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Agency Contact">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Contact Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contact Email">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="drag-n-drop-wrapper">
+              <i class="fa fa-file-text-o pdf-icon" aria-hidden="true"></i>
+              <small>Drag &amp; Drop PDF here.</small>
+            </div>
+
+            <button type="button" class="btn btn-upload">
+              <i class="fa fa-upload left" aria-hidden="true"></i>
+              Choose File
+            </button>
+
+            <div class="progress-wrapper">
+              <div class="upload-status success clearfix">
+                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
+                <small><strong>Success:</strong> license-pdf.pdf</small>
+                <div class="progress pull-left">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%; height: 2px;"></div>
+                </div>
+                <i class="fa fa-check-circle-o status-icon success" aria-hidden="true"></i>
+              </div>
+
+              <div class="upload-status success clearfix">
+                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
+                <small><strong>Uploading:</strong> license-pdf.pdf</small>
+                <div class="progress pull-left">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%; height: 2px;"></div>
+                </div>
+                <i class="fa fa-spinner fa-spin status-icon uploading" aria-hidden="true"></i>
+              </div>
+
+              <div class="upload-status success clearfix">
+                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
+                <small><strong>Error:</strong> Invalid File Format</small>
+                <div class="progress pull-left">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%; height: 2px;"></div>
+                </div>
+                <i class="fa fa-times status-icon error" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!-- /.scroll-wrapper -->
+</div><!-- /.agency-cells-wrapper -->
