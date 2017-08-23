@@ -432,9 +432,13 @@ body .agency-cells-wrapper {
   height: 100%;
   top: 260px;
 }
-html .agency-cells-wrapper .button-wrapper .overview-title,
-body .agency-cells-wrapper .button-wrapper .overview-title {
-  padding: 0;
+html .agency-cells-wrapper .btn-add,
+body .agency-cells-wrapper .btn-add {
+  margin: 11px 0 0 0;
+}
+html .agency-cells-wrapper .overview-title,
+body .agency-cells-wrapper .overview-title {
+  margin: 0;
 }
 html .agency-cells-wrapper .filter-wrapper,
 body .agency-cells-wrapper .filter-wrapper {
@@ -482,7 +486,7 @@ body .agency-cells-wrapper .filter-wrapper span.order-by.active {
 html .agency-cells-wrapper .scroll-wrapper,
 body .agency-cells-wrapper .scroll-wrapper {
   overflow-x: scroll;
-  height: calc(100% - 395px);
+  height: calc(100% - 362px);
 }
 html .agency-cells-wrapper .scroll-wrapper .agency-cell,
 body .agency-cells-wrapper .scroll-wrapper .agency-cell {
