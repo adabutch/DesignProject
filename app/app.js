@@ -8,19 +8,11 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl : "views/carrier-overview.html",
     controller : "CarrierOverviewCtrl"
   })
-  .when("/carrier/add-agency", {
-    templateUrl : "views/add-agency.html",
-    controller : "CarrierOverviewCtrl"
-  })
   .when("/agency", {
     templateUrl : "views/agency-overview.html",
     controller : "AgencyOverviewCtrl"
   })
   .when("/agency/add-license", {
-    templateUrl : "views/agency-overview.html",
-    controller : "AgencyOverviewCtrl"
-  })
-  .when("/agency/add-agent", {
     templateUrl : "views/agency-overview.html",
     controller : "AgencyOverviewCtrl"
   })
@@ -52,7 +44,7 @@ app.controller("CarrierOverviewCtrl", function($scope, $http) {
   };
 });
 
-app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce) {
+app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $location) {
   $http.get("json/us-states.json")
   .then(function(response) {
     $scope.usStates = response.data;
@@ -74,16 +66,13 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce) {
     console.log(response.statusText + " " + response.agencyLicenses);
   });
 
-  var url = "https://uinames.com/api/?ext&amount=250&region=united%20states&callback=JSON_CALLBACK";
+  var url = "https://uinames.com/api/?ext&amount=75&region=united%20states&callback=JSON_CALLBACK";
   $http.jsonp(url)
   .success(function(data) {
     $scope.agencyAgents = data;
   });
 
-  $scope.search = function (key) {
-    return (angular.lowercase(key.name).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-    angular.lowercase(key.surname).indexOf(angular.lowercase($scope.query) || '') !== -1);
-  };
+  $scope.addAgentRoute = $location.path() === '/agency/add-agent';
 
   $scope.showStates = false;
   $scope.showPolicies = true;

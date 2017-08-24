@@ -657,7 +657,9 @@ body .agency-agents-overview form .form-agent-body h1 {
 html .agency-agents-overview form .form-agent-body img.profile-img,
 body .agency-agents-overview form .form-agent-body img.profile-img {
   border-radius: 50%;
-  width: 100%;
+  width: 125px;
+  height: 125px;
+  background: white;
 }
 html .agency-license-overview .agent-search,
 body .agency-license-overview .agent-search,
@@ -812,6 +814,10 @@ body .agency-overview-wrapper .scroll-wrapper {
 html .agency-overview-wrapper .button-wrapper,
 body .agency-overview-wrapper .button-wrapper {
   margin: 0 -15px 0 -15px;
+}
+html .agency-overview-wrapper .button-wrapper.sml,
+body .agency-overview-wrapper .button-wrapper.sml {
+  margin: 0 -15px 15px -15px;
 }
 html .agency-overview-wrapper .button-wrapper.sml .btn,
 body .agency-overview-wrapper .button-wrapper.sml .btn {
