@@ -1,0 +1,48 @@
+table,
+.table {
+  margin: 0;
+}
+table thead th,
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e9ecef;
+  color: #3B5763;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+table tbody tr:hover th,
+.table tbody tr:hover th,
+table tbody tr:hover td,
+.table tbody tr:hover td {
+  color: #1f1f1f;
+}
+table tbody tr th,
+.table tbody tr th,
+table tbody tr td,
+.table tbody tr td {
+  font-size: 12px;
+  color: #858585;
+}
+table tbody tr th i.exam,
+.table tbody tr th i.exam,
+table tbody tr td i.exam,
+.table tbody tr td i.exam {
+  margin: 3px auto 0 auto;
+  display: block;
+  width: 30px;
+}
+table tbody tr th i.remove,
+.table tbody tr th i.remove,
+table tbody tr td i.remove,
+.table tbody tr td i.remove,
+table tbody tr th i.edit,
+.table tbody tr th i.edit,
+table tbody tr td i.edit,
+.table tbody tr td i.edit {
+  cursor: pointer;
+  margin: 3px auto 0 auto;
+  display: inline-block;
+  width: 20px;
+}

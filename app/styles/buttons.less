@@ -1,0 +1,62 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 2px;
+  font-size: 13px;
+  transition: background 200ms ease-in;
+
+  i {
+    &.left {
+      margin: 0 5px 0 0;
+    }
+
+    &.right {
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+.btn-add,
+.btn-save {
+  // float: right;
+  background: #08B46E;
+  color: white;
+
+  &:hover {
+    background: darken(#08B46E, 3%);
+  }
+}
+
+.btn-cancel {
+  display: block;
+  background: #d9534f;
+  color: white;
+
+  &:hover {
+    background: darken(#d9534f, 10%);
+  }
+}
+
+.btn-view {
+  margin: 7px 0 0 0;
+  display: block;
+  background: #3B5763;
+  color: white;
+
+  &:hover {
+    background: #274753;
+  }
+}
+
+.btn-upload {
+  display: block;
+  margin: 0 auto;
+  background: #007bff;
+  color: white;
+
+  &:hover {
+    background: darken(#007bff, 2%);
+  }
+}

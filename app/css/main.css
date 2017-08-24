@@ -2,51 +2,6 @@ html,
 body {
   background: #f5f5f5;
 }
-html nav.navbar,
-body nav.navbar {
-  background: white;
-}
-html nav.navbar .navbar-brand,
-body nav.navbar .navbar-brand {
-  height: 40px;
-}
-html nav.navbar .navbar-brand img,
-body nav.navbar .navbar-brand img {
-  width: 140px;
-  margin: -6px 0 0 0;
-  vertical-align: middle;
-}
-html nav.navbar .navbar-toggler,
-body nav.navbar .navbar-toggler {
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
-  border-color: 1px solid #f5f5f5;
-}
-html nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon svg path,
-body nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon svg path {
-  stroke: #5E5E5E;
-}
-html nav.navbar .navbar-toggler .navbar-toggler-icon svg path,
-body nav.navbar .navbar-toggler .navbar-toggler-icon svg path {
-  stroke: #0690A9;
-}
-html nav.navbar .navbar-toggler:hover .navbar-toggler-icon svg path,
-body nav.navbar .navbar-toggler:hover .navbar-toggler-icon svg path {
-  stroke: #0690A9;
-}
-html nav.navbar .navbar-nav a,
-body nav.navbar .navbar-nav a {
-  color: rgba(115, 115, 115, 0.9);
-}
-html nav.navbar .navbar-nav a:hover,
-body nav.navbar .navbar-nav a:hover {
-  color: #262626;
-}
-html p,
-body p {
-  font-size: 14px;
-  color: #5E5E5E;
-}
 html button,
 body button {
   cursor: pointer;
@@ -109,6 +64,46 @@ body .btn-upload {
 html .btn-upload:hover,
 body .btn-upload:hover {
   background: #0076f5;
+}
+html nav.navbar,
+body nav.navbar {
+  background: white;
+}
+html nav.navbar .navbar-brand,
+body nav.navbar .navbar-brand {
+  height: 40px;
+}
+html nav.navbar .navbar-brand img,
+body nav.navbar .navbar-brand img {
+  width: 140px;
+  margin: -6px 0 0 0;
+  vertical-align: middle;
+}
+html nav.navbar .navbar-toggler,
+body nav.navbar .navbar-toggler {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: 1px solid #f5f5f5;
+}
+html nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon svg path,
+body nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon svg path {
+  stroke: #5E5E5E;
+}
+html nav.navbar .navbar-toggler .navbar-toggler-icon svg path,
+body nav.navbar .navbar-toggler .navbar-toggler-icon svg path {
+  stroke: #0690A9;
+}
+html nav.navbar .navbar-toggler:hover .navbar-toggler-icon svg path,
+body nav.navbar .navbar-toggler:hover .navbar-toggler-icon svg path {
+  stroke: #0690A9;
+}
+html nav.navbar .navbar-nav a,
+body nav.navbar .navbar-nav a {
+  color: rgba(115, 115, 115, 0.9);
+}
+html nav.navbar .navbar-nav a:hover,
+body nav.navbar .navbar-nav a:hover {
+  color: #262626;
 }
 html .drag-n-drop-wrapper,
 body .drag-n-drop-wrapper {
@@ -177,6 +172,86 @@ body .progress-wrapper i.uploading {
 html .progress-wrapper i.error,
 body .progress-wrapper i.error {
   color: #d9534f;
+}
+html .toggle,
+body .toggle {
+  display: none;
+}
+html .toggle,
+body .toggle,
+html .toggle:after,
+body .toggle:after,
+html .toggle:before,
+body .toggle:before,
+html .toggle *,
+body .toggle *,
+html .toggle *:after,
+body .toggle *:after,
+html .toggle *:before,
+body .toggle *:before,
+html .toggle + .toggle-btn,
+body .toggle + .toggle-btn {
+  box-sizing: border-box;
+}
+html .toggle::selection,
+body .toggle::selection,
+html .toggle:after::selection,
+body .toggle:after::selection,
+html .toggle:before::selection,
+body .toggle:before::selection,
+html .toggle *::selection,
+body .toggle *::selection,
+html .toggle *:after::selection,
+body .toggle *:after::selection,
+html .toggle *:before::selection,
+body .toggle *:before::selection,
+html .toggle + .toggle-btn::selection,
+body .toggle + .toggle-btn::selection {
+  background: none;
+}
+html .toggle + .toggle-btn,
+body .toggle + .toggle-btn {
+  outline: 0;
+  display: block;
+  width: 27px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  background: #dcdcdc;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all .4s ease;
+}
+html .toggle + .toggle-btn:after,
+body .toggle + .toggle-btn:after,
+html .toggle + .toggle-btn:before,
+body .toggle + .toggle-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+html .toggle + .toggle-btn:after,
+body .toggle + .toggle-btn:after {
+  left: 0;
+  border-radius: 50%;
+  background: white;
+  transition: all .2s ease;
+}
+html .toggle + .toggle-btn:before,
+body .toggle + .toggle-btn:before {
+  display: none;
+}
+html .toggle:checked + .toggle-btn,
+body .toggle:checked + .toggle-btn {
+  background: #9FD6AE;
+}
+html .toggle:checked + .toggle-btn:after,
+body .toggle:checked + .toggle-btn:after {
+  left: 50%;
+  background: whitefff;
 }
 html form label,
 body form label {
@@ -267,91 +342,119 @@ body input:focus::placeholder {
   -o-transition: opacity 0.2s ease-in;
   -ms-transition: opacity 0.2s ease-in;
 }
-html .toggle,
-body .toggle {
-  display: none;
+html table,
+body table,
+html .table,
+body .table {
+  margin: 0;
 }
-html .toggle,
-body .toggle,
-html .toggle:after,
-body .toggle:after,
-html .toggle:before,
-body .toggle:before,
-html .toggle *,
-body .toggle *,
-html .toggle *:after,
-body .toggle *:after,
-html .toggle *:before,
-body .toggle *:before,
-html .toggle + .toggle-btn,
-body .toggle + .toggle-btn {
-  box-sizing: border-box;
+html table thead th,
+body table thead th,
+html .table thead th,
+body .table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e9ecef;
+  color: #3B5763;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 0;
 }
-html .toggle::selection,
-body .toggle::selection,
-html .toggle:after::selection,
-body .toggle:after::selection,
-html .toggle:before::selection,
-body .toggle:before::selection,
-html .toggle *::selection,
-body .toggle *::selection,
-html .toggle *:after::selection,
-body .toggle *:after::selection,
-html .toggle *:before::selection,
-body .toggle *:before::selection,
-html .toggle + .toggle-btn::selection,
-body .toggle + .toggle-btn::selection {
-  background: none;
+html table tbody tr:hover th,
+body table tbody tr:hover th,
+html .table tbody tr:hover th,
+body .table tbody tr:hover th,
+html table tbody tr:hover td,
+body table tbody tr:hover td,
+html .table tbody tr:hover td,
+body .table tbody tr:hover td {
+  color: #1f1f1f;
 }
-html .toggle + .toggle-btn,
-body .toggle + .toggle-btn {
-  outline: 0;
+html table tbody tr th,
+body table tbody tr th,
+html .table tbody tr th,
+body .table tbody tr th,
+html table tbody tr td,
+body table tbody tr td,
+html .table tbody tr td,
+body .table tbody tr td {
+  font-size: 12px;
+  color: #858585;
+}
+html table tbody tr th i.exam,
+body table tbody tr th i.exam,
+html .table tbody tr th i.exam,
+body .table tbody tr th i.exam,
+html table tbody tr td i.exam,
+body table tbody tr td i.exam,
+html .table tbody tr td i.exam,
+body .table tbody tr td i.exam {
+  margin: 3px auto 0 auto;
   display: block;
-  width: 27px;
-  height: 15px;
-  position: relative;
+  width: 30px;
+}
+html table tbody tr th i.remove,
+body table tbody tr th i.remove,
+html .table tbody tr th i.remove,
+body .table tbody tr th i.remove,
+html table tbody tr td i.remove,
+body table tbody tr td i.remove,
+html .table tbody tr td i.remove,
+body .table tbody tr td i.remove,
+html table tbody tr th i.edit,
+body table tbody tr th i.edit,
+html .table tbody tr th i.edit,
+body .table tbody tr th i.edit,
+html table tbody tr td i.edit,
+body table tbody tr td i.edit,
+html .table tbody tr td i.edit,
+body .table tbody tr td i.edit {
   cursor: pointer;
-  user-select: none;
-  background: #dcdcdc;
-  border-radius: 2em;
-  padding: 2px;
-  transition: all .4s ease;
+  margin: 3px auto 0 auto;
+  display: inline-block;
+  width: 20px;
 }
-html .toggle + .toggle-btn:after,
-body .toggle + .toggle-btn:after,
-html .toggle + .toggle-btn:before,
-body .toggle + .toggle-btn:before {
-  position: relative;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
+html .nav-tabs,
+body .nav-tabs {
+  padding: 0 0 0 30px;
+  border-bottom: none;
 }
-html .toggle + .toggle-btn:after,
-body .toggle + .toggle-btn:after {
-  left: 0;
-  border-radius: 50%;
+html .nav-tabs li.nav-item,
+body .nav-tabs li.nav-item {
+  z-index: 2;
+  margin: 0;
+  border: 1px solid #e8e8e8;
+  border-bottom: none;
+  border-right: none;
+}
+html .nav-tabs li.nav-item:last-child,
+body .nav-tabs li.nav-item:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+html .nav-tabs li.nav-item.active,
+body .nav-tabs li.nav-item.active {
   background: white;
-  transition: all .2s ease;
 }
-html .toggle + .toggle-btn:before,
-body .toggle + .toggle-btn:before {
-  display: none;
+html .nav-tabs li.nav-item.active a.nav-link,
+body .nav-tabs li.nav-item.active a.nav-link {
+  color: #3B5763;
 }
-html .toggle:checked + .toggle-btn,
-body .toggle:checked + .toggle-btn {
-  background: #9FD6AE;
+html .nav-tabs li.nav-item a.nav-link,
+body .nav-tabs li.nav-item a.nav-link {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  border: 0;
 }
-html .toggle:checked + .toggle-btn:after,
-body .toggle:checked + .toggle-btn:after {
-  left: 50%;
-  background: whitefff;
-}
-html .content-wrapper,
-body .content-wrapper {
-  position: relative;
-  margin: 56px 0 0 0;
-  padding: 15px;
+html .nav-tabs li.nav-item a.nav-link:hover,
+body .nav-tabs li.nav-item a.nav-link:hover {
+  border: 0;
+  color: #3B5763;
 }
 html .overview-title,
 body .overview-title {
@@ -565,247 +668,6 @@ html .agency-cells-wrapper .scroll-wrapper .agency-cell ul li strong,
 body .agency-cells-wrapper .scroll-wrapper .agency-cell ul li strong {
   color: #5E5E5E;
 }
-html .nav-tabs,
-body .nav-tabs {
-  padding: 0 0 0 30px;
-  border-bottom: none;
-}
-html .nav-tabs li.nav-item,
-body .nav-tabs li.nav-item {
-  z-index: 2;
-  margin: 0;
-  border: 1px solid #e8e8e8;
-  border-bottom: none;
-  border-right: none;
-}
-html .nav-tabs li.nav-item:last-child,
-body .nav-tabs li.nav-item:last-child {
-  border-right: 1px solid #e8e8e8;
-}
-html .nav-tabs li.nav-item.active,
-body .nav-tabs li.nav-item.active {
-  background: white;
-}
-html .nav-tabs li.nav-item.active a.nav-link,
-body .nav-tabs li.nav-item.active a.nav-link {
-  color: #3B5763;
-}
-html .nav-tabs li.nav-item a.nav-link,
-body .nav-tabs li.nav-item a.nav-link {
-  text-transform: uppercase;
-  color: #9e9e9e;
-  font-size: 12px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  display: block;
-  width: 100%;
-  padding: 5px 15px;
-  border: 0;
-}
-html .nav-tabs li.nav-item a.nav-link:hover,
-body .nav-tabs li.nav-item a.nav-link:hover {
-  border: 0;
-  color: #3B5763;
-}
-html .agency-agents-overview .nav-pills,
-body .agency-agents-overview .nav-pills {
-  margin: 53px 0 0 0;
-  height: calc(100% - 53px) !important;
-}
-html .agency-agents-overview .tab-content,
-body .agency-agents-overview .tab-content {
-  background: #f5f5f5 !important;
-  padding-bottom: 0 !important;
-}
-html .agency-agents-overview form .form-agent-header,
-body .agency-agents-overview form .form-agent-header {
-  position: fixed;
-  z-index: 1;
-  width: calc(100% - 478px);
-  margin: -15px 0 20px 0;
-  padding: 19px 0 16px 0;
-  background: white;
-  border-bottom: 1px solid #f5f5f5;
-}
-html .agency-agents-overview form .form-agent-header span,
-body .agency-agents-overview form .form-agent-header span {
-  text-transform: uppercase;
-  color: #9e9e9e;
-  font-size: 12px;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-html .agency-agents-overview form .form-agent-header span.license-status.valid,
-body .agency-agents-overview form .form-agent-header span.license-status.valid {
-  color: #08B46E;
-}
-html .agency-agents-overview form .form-agent-body,
-body .agency-agents-overview form .form-agent-body {
-  margin: 39px -15px 0 -15px;
-  padding: 15px 0;
-  background: #f5f5f5;
-}
-html .agency-agents-overview form .form-agent-body h1,
-body .agency-agents-overview form .form-agent-body h1 {
-  color: #858585;
-  margin: 0 0 10px 0;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-html .agency-agents-overview form .form-agent-body small.state-licensed,
-body .agency-agents-overview form .form-agent-body small.state-licensed {
-  display: block;
-  margin: 0 0 15px 0;
-  color: #9e9e9e;
-}
-html .agency-agents-overview form .form-agent-body img.profile-img,
-body .agency-agents-overview form .form-agent-body img.profile-img {
-  border-radius: 50%;
-  width: 125px;
-  height: 125px;
-  background: white;
-  border: 2px solid #e8e8e8;
-  padding: 3px;
-}
-html .agency-license-overview .agent-search,
-body .agency-license-overview .agent-search,
-html .agency-agents-overview .agent-search,
-body .agency-agents-overview .agent-search {
-  z-index: 1;
-  position: fixed;
-  width: 211px;
-  padding: 15px;
-  border-right: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
-}
-html .agency-license-overview .agent-search .input-group-addon,
-body .agency-license-overview .agent-search .input-group-addon,
-html .agency-agents-overview .agent-search .input-group-addon,
-body .agency-agents-overview .agent-search .input-group-addon {
-  padding: 0 15px 5px 0;
-  font-size: 14px;
-  line-height: 14px;
-  background: transparent;
-  border: none;
-}
-html .agency-license-overview .agent-search input,
-body .agency-license-overview .agent-search input,
-html .agency-agents-overview .agent-search input,
-body .agency-agents-overview .agent-search input {
-  font-size: 14px;
-  line-height: 14px;
-  padding: 0 0 5px 5px;
-  background: transparent;
-  border-radius: 0;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-}
-html .agency-license-overview .agent-search span.order-by,
-body .agency-license-overview .agent-search span.order-by,
-html .agency-agents-overview .agent-search span.order-by,
-body .agency-agents-overview .agent-search span.order-by {
-  cursor: pointer;
-  margin: 0 5px 0 0;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #9e9e9e;
-}
-html .agency-license-overview .agent-search span.order-by.active,
-body .agency-license-overview .agent-search span.order-by.active,
-html .agency-agents-overview .agent-search span.order-by.active,
-body .agency-agents-overview .agent-search span.order-by.active {
-  color: #3B5763;
-}
-html .agency-license-overview .nav-pills,
-body .agency-license-overview .nav-pills,
-html .agency-agents-overview .nav-pills,
-body .agency-agents-overview .nav-pills {
-  width: 211px;
-  height: 100%;
-  position: absolute;
-  overflow-x: scroll;
-  display: block;
-  flex-wrap: nowrap;
-}
-html .agency-license-overview .nav-pills li,
-body .agency-license-overview .nav-pills li,
-html .agency-agents-overview .nav-pills li,
-body .agency-agents-overview .nav-pills li {
-  display: block;
-  width: 100%;
-  border-right: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
-}
-html .agency-license-overview .nav-pills li.active,
-body .agency-license-overview .nav-pills li.active,
-html .agency-agents-overview .nav-pills li.active,
-body .agency-agents-overview .nav-pills li.active,
-html .agency-license-overview .nav-pills li:hover,
-body .agency-license-overview .nav-pills li:hover,
-html .agency-agents-overview .nav-pills li:hover,
-body .agency-agents-overview .nav-pills li:hover {
-  border-right: none;
-  background: #f5f5f5;
-}
-html .agency-license-overview .nav-pills li a,
-body .agency-license-overview .nav-pills li a,
-html .agency-agents-overview .nav-pills li a,
-body .agency-agents-overview .nav-pills li a {
-  font-size: 12px;
-  color: #9e9e9e;
-}
-html .agency-license-overview .nav-pills li a i,
-body .agency-license-overview .nav-pills li a i,
-html .agency-agents-overview .nav-pills li a i,
-body .agency-agents-overview .nav-pills li a i {
-  margin: 3px 0 0 0;
-}
-html .agency-license-overview .nav-pills li a i.agent,
-body .agency-license-overview .nav-pills li a i.agent,
-html .agency-agents-overview .nav-pills li a i.agent,
-body .agency-agents-overview .nav-pills li a i.agent {
-  margin: 10px 0 0 0;
-}
-html .agency-license-overview .nav-pills li img.profile-img,
-body .agency-license-overview .nav-pills li img.profile-img,
-html .agency-agents-overview .nav-pills li img.profile-img,
-body .agency-agents-overview .nav-pills li img.profile-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 10px 0 0;
-  display: inline-block;
-}
-html .agency-license-overview .nav-pills li .profile-meta,
-body .agency-license-overview .nav-pills li .profile-meta,
-html .agency-agents-overview .nav-pills li .profile-meta,
-body .agency-agents-overview .nav-pills li .profile-meta {
-  display: inline-block;
-  vertical-align: middle;
-}
-html .agency-license-overview .nav-pills li .profile-meta span,
-body .agency-license-overview .nav-pills li .profile-meta span,
-html .agency-agents-overview .nav-pills li .profile-meta span,
-body .agency-agents-overview .nav-pills li .profile-meta span {
-  display: block;
-}
-html .agency-license-overview .nav-pills li .profile-meta span.name,
-body .agency-license-overview .nav-pills li .profile-meta span.name,
-html .agency-agents-overview .nav-pills li .profile-meta span.name,
-body .agency-agents-overview .nav-pills li .profile-meta span.name {
-  color: #5E5E5E;
-  font-weight: bold;
-}
-html .agency-license-overview .nav-pills li .profile-meta span.email,
-body .agency-license-overview .nav-pills li .profile-meta span.email,
-html .agency-agents-overview .nav-pills li .profile-meta span.email,
-body .agency-agents-overview .nav-pills li .profile-meta span.email {
-  font-size: 10px;
-}
 html .agency-overview-wrapper,
 body .agency-overview-wrapper {
   position: fixed;
@@ -972,10 +834,8 @@ body .agency-wrapper .tab-content-wrapper .tab-content {
   border-radius: 2px;
   border: 1px solid #e8e8e8;
 }
-html .agency-wrapper .tab-content-wrapper .tab-content .agency-license-overview .tab-content,
-body .agency-wrapper .tab-content-wrapper .tab-content .agency-license-overview .tab-content,
-html .agency-wrapper .tab-content-wrapper .tab-content .agency-agents-overview .tab-content,
-body .agency-wrapper .tab-content-wrapper .tab-content .agency-agents-overview .tab-content {
+html .agency-wrapper .tab-content-wrapper .tab-content .agency-tabbed-wrapper .tab-content,
+body .agency-wrapper .tab-content-wrapper .tab-content .agency-tabbed-wrapper .tab-content {
   position: fixed;
   right: 15px;
   width: calc(100% - 477px);
@@ -984,75 +844,179 @@ body .agency-wrapper .tab-content-wrapper .tab-content .agency-agents-overview .
   border-left: none;
   overflow-y: scroll;
 }
-html .agency-wrapper table,
-body .agency-wrapper table,
-html .agency-wrapper .table,
-body .agency-wrapper .table {
-  margin: 0;
+html .agency-tabbed-wrapper .nav-pills,
+body .agency-tabbed-wrapper .nav-pills {
+  width: 211px;
+  height: 100%;
+  position: absolute;
+  overflow-x: scroll;
+  display: block;
+  flex-wrap: nowrap;
 }
-html .agency-wrapper table thead th,
-body .agency-wrapper table thead th,
-html .agency-wrapper .table thead th,
-body .agency-wrapper .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #e9ecef;
-  color: #3B5763;
+html .agency-tabbed-wrapper .nav-pills li,
+body .agency-tabbed-wrapper .nav-pills li {
+  display: block;
+  width: 100%;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+html .agency-tabbed-wrapper .nav-pills li.active,
+body .agency-tabbed-wrapper .nav-pills li.active,
+html .agency-tabbed-wrapper .nav-pills li:hover,
+body .agency-tabbed-wrapper .nav-pills li:hover {
+  border-right: none;
+  background: #f5f5f5;
+}
+html .agency-tabbed-wrapper .nav-pills li a,
+body .agency-tabbed-wrapper .nav-pills li a {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+html .agency-tabbed-wrapper .nav-pills li a i,
+body .agency-tabbed-wrapper .nav-pills li a i {
+  margin: 3px 0 0 0;
+}
+html .agency-tabbed-wrapper .nav-pills li a i.agent,
+body .agency-tabbed-wrapper .nav-pills li a i.agent {
+  margin: 10px 0 0 0;
+}
+html .agency-tabbed-wrapper .nav-pills li img.profile-img,
+body .agency-tabbed-wrapper .nav-pills li img.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+html .agency-tabbed-wrapper .nav-pills li .profile-meta,
+body .agency-tabbed-wrapper .nav-pills li .profile-meta {
+  display: inline-block;
+  vertical-align: middle;
+}
+html .agency-tabbed-wrapper .nav-pills li .profile-meta span,
+body .agency-tabbed-wrapper .nav-pills li .profile-meta span {
+  display: block;
+}
+html .agency-tabbed-wrapper .nav-pills li .profile-meta span.name,
+body .agency-tabbed-wrapper .nav-pills li .profile-meta span.name {
+  color: #5E5E5E;
+  font-weight: bold;
+}
+html .agency-tabbed-wrapper .nav-pills li .profile-meta span.email,
+body .agency-tabbed-wrapper .nav-pills li .profile-meta span.email {
+  font-size: 10px;
+}
+html .agency-tabbed-wrapper.agents .nav-pills,
+body .agency-tabbed-wrapper.agents .nav-pills {
+  margin: 53px 0 0 0;
+  height: calc(100% - 53px) !important;
+}
+html .agency-tabbed-wrapper.agents .tab-content,
+body .agency-tabbed-wrapper.agents .tab-content {
+  background: #f5f5f5 !important;
+  padding-bottom: 0 !important;
+}
+html .agency-tabbed-wrapper.agents form .form-agent-header,
+body .agency-tabbed-wrapper.agents form .form-agent-header {
+  position: fixed;
+  z-index: 1;
+  width: calc(100% - 478px);
+  margin: -15px 0 20px 0;
+  padding: 19px 0 16px 0;
+  background: white;
+  border-bottom: 1px solid #f5f5f5;
+}
+html .agency-tabbed-wrapper.agents form .form-agent-header span,
+body .agency-tabbed-wrapper.agents form .form-agent-header span {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+html .agency-tabbed-wrapper.agents form .form-agent-header span.license-status.valid,
+body .agency-tabbed-wrapper.agents form .form-agent-header span.license-status.valid {
+  color: #08B46E;
+}
+html .agency-tabbed-wrapper.agents .form-agent-body,
+body .agency-tabbed-wrapper.agents .form-agent-body {
+  margin: 39px -15px 0 -15px;
+  padding: 15px 0;
+  background: #f5f5f5;
+}
+html .agency-tabbed-wrapper.agents .form-agent-body h1,
+body .agency-tabbed-wrapper.agents .form-agent-body h1 {
+  color: #858585;
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+html .agency-tabbed-wrapper.agents .form-agent-body small.state-licensed,
+body .agency-tabbed-wrapper.agents .form-agent-body small.state-licensed {
+  display: block;
+  margin: 0 0 15px 0;
+  color: #9e9e9e;
+}
+html .agency-tabbed-wrapper.agents .form-agent-body img.profile-img,
+body .agency-tabbed-wrapper.agents .form-agent-body img.profile-img {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background: white;
+  border: 2px solid #e8e8e8;
+  padding: 3px;
+}
+html .agency-tabbed-wrapper.agents .agent-search,
+body .agency-tabbed-wrapper.agents .agent-search {
+  z-index: 1;
+  position: fixed;
+  width: 211px;
+  padding: 15px;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+html .agency-tabbed-wrapper.agents .agent-search .input-group-addon,
+body .agency-tabbed-wrapper.agents .agent-search .input-group-addon {
+  padding: 0 15px 5px 0;
+  font-size: 14px;
+  line-height: 14px;
+  background: transparent;
+  border: none;
+}
+html .agency-tabbed-wrapper.agents .agent-search input,
+body .agency-tabbed-wrapper.agents .agent-search input {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 0 5px 5px;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+html .agency-tabbed-wrapper.agents .agent-search span.order-by,
+body .agency-tabbed-wrapper.agents .agent-search span.order-by {
+  cursor: pointer;
+  margin: 0 5px 0 0;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
-  border-radius: 0;
+  font-weight: 600;
+  color: #9e9e9e;
 }
-html .agency-wrapper table tbody tr:hover th,
-body .agency-wrapper table tbody tr:hover th,
-html .agency-wrapper .table tbody tr:hover th,
-body .agency-wrapper .table tbody tr:hover th,
-html .agency-wrapper table tbody tr:hover td,
-body .agency-wrapper table tbody tr:hover td,
-html .agency-wrapper .table tbody tr:hover td,
-body .agency-wrapper .table tbody tr:hover td {
-  color: #1f1f1f;
+html .agency-tabbed-wrapper.agents .agent-search span.order-by.active,
+body .agency-tabbed-wrapper.agents .agent-search span.order-by.active {
+  color: #3B5763;
 }
-html .agency-wrapper table tbody tr th,
-body .agency-wrapper table tbody tr th,
-html .agency-wrapper .table tbody tr th,
-body .agency-wrapper .table tbody tr th,
-html .agency-wrapper table tbody tr td,
-body .agency-wrapper table tbody tr td,
-html .agency-wrapper .table tbody tr td,
-body .agency-wrapper .table tbody tr td {
-  font-size: 12px;
-  color: #858585;
+html p,
+body p {
+  font-size: 14px;
+  color: #5E5E5E;
 }
-html .agency-wrapper table tbody tr th i.exam,
-body .agency-wrapper table tbody tr th i.exam,
-html .agency-wrapper .table tbody tr th i.exam,
-body .agency-wrapper .table tbody tr th i.exam,
-html .agency-wrapper table tbody tr td i.exam,
-body .agency-wrapper table tbody tr td i.exam,
-html .agency-wrapper .table tbody tr td i.exam,
-body .agency-wrapper .table tbody tr td i.exam {
-  margin: 3px auto 0 auto;
-  display: block;
-  width: 30px;
-}
-html .agency-wrapper table tbody tr th i.remove,
-body .agency-wrapper table tbody tr th i.remove,
-html .agency-wrapper .table tbody tr th i.remove,
-body .agency-wrapper .table tbody tr th i.remove,
-html .agency-wrapper table tbody tr td i.remove,
-body .agency-wrapper table tbody tr td i.remove,
-html .agency-wrapper .table tbody tr td i.remove,
-body .agency-wrapper .table tbody tr td i.remove,
-html .agency-wrapper table tbody tr th i.edit,
-body .agency-wrapper table tbody tr th i.edit,
-html .agency-wrapper .table tbody tr th i.edit,
-body .agency-wrapper .table tbody tr th i.edit,
-html .agency-wrapper table tbody tr td i.edit,
-body .agency-wrapper table tbody tr td i.edit,
-html .agency-wrapper .table tbody tr td i.edit,
-body .agency-wrapper .table tbody tr td i.edit {
-  cursor: pointer;
-  margin: 3px auto 0 auto;
-  display: inline-block;
-  width: 20px;
+html .content-wrapper,
+body .content-wrapper {
+  position: relative;
+  margin: 56px 0 0 0;
+  padding: 15px;
 }

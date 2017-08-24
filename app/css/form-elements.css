@@ -1,0 +1,190 @@
+.drag-n-drop-wrapper {
+  width: 200px;
+  height: 225px;
+  margin: 5px auto 20px auto;
+  border: 2px dashed #dfdfdf;
+  text-align: center;
+}
+.drag-n-drop-wrapper:hover {
+  border-color: #d2d2d2;
+}
+.drag-n-drop-wrapper i.pdf-icon {
+  font-size: 80px;
+  color: #c5c5c5;
+  display: block;
+  margin: 55px 0 15px 0;
+}
+.drag-n-drop-wrapper small {
+  color: #9e9e9e;
+}
+.progress-wrapper {
+  margin: 20px auto 0 auto;
+  width: 275px;
+}
+.progress-wrapper .upload-status {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+.progress-wrapper .upload-status small {
+  font-size: 10px;
+  vertical-align: top;
+  color: #999E9E;
+  margin: -1px 0 0 10px;
+  display: block;
+  float: left;
+}
+.progress-wrapper .progress {
+  margin: 1px 10px 0 10px;
+  width: calc(100% - 58px);
+}
+.progress-wrapper i.pdf-icon {
+  color: #999E9E;
+}
+.progress-wrapper i.status-icon {
+  display: inline-block;
+  text-align: right;
+}
+.progress-wrapper i.success {
+  color: #08B46E;
+}
+.progress-wrapper i.uploading {
+  color: #c5c5c5;
+}
+.progress-wrapper i.error {
+  color: #d9534f;
+}
+.toggle {
+  display: none;
+}
+.toggle,
+.toggle:after,
+.toggle:before,
+.toggle *,
+.toggle *:after,
+.toggle *:before,
+.toggle + .toggle-btn {
+  box-sizing: border-box;
+}
+.toggle::selection,
+.toggle:after::selection,
+.toggle:before::selection,
+.toggle *::selection,
+.toggle *:after::selection,
+.toggle *:before::selection,
+.toggle + .toggle-btn::selection {
+  background: none;
+}
+.toggle + .toggle-btn {
+  outline: 0;
+  display: block;
+  width: 27px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  background: #dcdcdc;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all .4s ease;
+}
+.toggle + .toggle-btn:after,
+.toggle + .toggle-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.toggle + .toggle-btn:after {
+  left: 0;
+  border-radius: 50%;
+  background: white;
+  transition: all .2s ease;
+}
+.toggle + .toggle-btn:before {
+  display: none;
+}
+.toggle:checked + .toggle-btn {
+  background: #9FD6AE;
+}
+.toggle:checked + .toggle-btn:after {
+  left: 50%;
+  background: whitefff;
+}
+form label {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+form input.form-control {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #9e9e9e !important;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  color: #9e9e9e !important;
+}
+input::-ms-input-placeholder {
+  opacity: 1;
+  color: #9e9e9e !important;
+}
+input::-moz-placeholder {
+  opacity: 0;
+  color: #9e9e9e !important;
+}
+input::placeholder {
+  opacity: 1;
+  color: #9e9e9e !important;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+}
+input:focus::-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+}
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+}

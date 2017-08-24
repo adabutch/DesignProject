@@ -166,3 +166,5 @@ app.filter('tel', function () {
   }
   };
 });
+
+console.log("Adam Butcher's Design Project for BriteCore.");
