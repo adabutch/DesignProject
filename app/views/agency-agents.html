@@ -36,6 +36,7 @@
 
         <div class="col-md-10">
           <h1>{{agent.name}} {{agent.surname}}</h1>
+          <small class="state-licensed">Licensed in <strong>five</strong> states</small>
           <div class="row">
             <div class="col-md-6 form-group">
               <label class="form-control-label" for="formGroupExampleInput">First Name</label>
@@ -67,10 +68,22 @@
 
           <div class="row button-wrapper sml">
             <div class="col-md-12">
-              <a href="/agency/add-license" class="btn btn-add pull-right">
-                <i class="fa fa-plus left" aria-hidden="true"></i>
-                Add License
-              </a>
+              <div class="dropdown">
+                <a href="/agency/add-license" class="btn btn-add">
+                  <i class="fa fa-plus left" aria-hidden="true"></i>
+                  Add License
+                </a>
+
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  License per state
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Florida</a>
+                  <a class="dropdown-item" href="#">Indiana</a>
+                  <a class="dropdown-item" href="#">Kentucky</a>
+                  <a class="dropdown-item" href="#">Nevada</a>
+                </div>
+              </div>
             </div>
           </div>
 

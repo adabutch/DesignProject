@@ -649,10 +649,16 @@ body .agency-agents-overview form .form-agent-body {
 html .agency-agents-overview form .form-agent-body h1,
 body .agency-agents-overview form .form-agent-body h1 {
   color: #858585;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1px;
+}
+html .agency-agents-overview form .form-agent-body small.state-licensed,
+body .agency-agents-overview form .form-agent-body small.state-licensed {
+  display: block;
+  margin: 0 0 15px 0;
+  color: #9e9e9e;
 }
 html .agency-agents-overview form .form-agent-body img.profile-img,
 body .agency-agents-overview form .form-agent-body img.profile-img {
@@ -660,6 +666,8 @@ body .agency-agents-overview form .form-agent-body img.profile-img {
   width: 125px;
   height: 125px;
   background: white;
+  border: 2px solid #e8e8e8;
+  padding: 3px;
 }
 html .agency-license-overview .agent-search,
 body .agency-license-overview .agent-search,
@@ -823,6 +831,34 @@ html .agency-overview-wrapper .button-wrapper.sml .btn,
 body .agency-overview-wrapper .button-wrapper.sml .btn {
   font-size: 12px;
   padding: 5px 10px;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-toggle,
+body .agency-overview-wrapper .button-wrapper .dropdown-toggle {
+  color: white;
+  background: #3B5763;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-menu,
+body .agency-overview-wrapper .button-wrapper .dropdown-menu {
+  padding: 0;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item,
+body .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item {
+  color: #9e9e9e;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item:first-child,
+body .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item:first-child {
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item:hover,
+body .agency-overview-wrapper .button-wrapper .dropdown-menu a.dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 html .agency-wrapper,
 body .agency-wrapper {

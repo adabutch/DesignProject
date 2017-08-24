@@ -72,8 +72,6 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
     $scope.agencyAgents = data;
   });
 
-  $scope.addAgentRoute = $location.path() === '/agency/add-agent';
-
   $scope.showStates = false;
   $scope.showPolicies = true;
 

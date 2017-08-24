@@ -719,10 +719,18 @@ html, body {
 
         h1 {
           color: darken(#9e9e9e, 10%);
-          margin: 0 0 20px 0;
+          margin: 0 0 10px 0;
           font-size: 30px;
           font-weight: 400;
           letter-spacing: 1px;
+        }
+
+        small {
+          &.state-licensed {
+            display: block;
+            margin: 0 0 15px 0;
+            color: #9e9e9e;
+          }
         }
 
         img {
@@ -731,6 +739,8 @@ html, body {
             width: 125px;
             height: 125px;
             background: white;
+            border: 2px solid #e8e8e8;
+            padding: 3px;
           }
         }
 
@@ -887,6 +897,36 @@ html, body {
         .btn {
           font-size: 12px;
           padding: 5px 10px;
+        }
+      }
+
+      .dropdown-toggle {
+        color: white;
+        background: #3B5763;
+      }
+
+      .dropdown-menu {
+        padding: 0;
+
+        a {
+          &.dropdown-item {
+            color: #9e9e9e;
+            font-size: 12px;
+            padding: 5px 10px;
+
+            &:first-child {
+              -webkit-border-top-left-radius: 2px;
+              -webkit-border-top-right-radius: 2px;
+              -moz-border-radius-topleft: 2px;
+              -moz-border-radius-topright: 2px;
+              border-top-left-radius: 2px;
+              border-top-right-radius: 2px;
+            }
+
+            &:hover {
+              background: rgba(0,0,0,.05);
+            }
+          }
         }
       }
     }
