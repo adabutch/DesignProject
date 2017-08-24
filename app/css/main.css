@@ -429,7 +429,7 @@ body .agency-cells-wrapper {
   position: fixed;
   width: calc(100% - 30px);
   height: 100%;
-  top: 260px;
+  top: 250px;
 }
 html .agency-cells-wrapper .btn-add,
 body .agency-cells-wrapper .btn-add {
@@ -437,7 +437,7 @@ body .agency-cells-wrapper .btn-add {
 }
 html .agency-cells-wrapper .overview-title,
 body .agency-cells-wrapper .overview-title {
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
 }
 html .agency-cells-wrapper .filter-wrapper,
 body .agency-cells-wrapper .filter-wrapper {
@@ -811,7 +811,7 @@ body .agency-overview-wrapper {
   position: fixed;
   width: calc(100% - 30px);
   height: calc(100% - 275px);
-  top: 203px;
+  top: 236px;
 }
 html .agency-overview-wrapper .scroll-wrapper,
 body .agency-overview-wrapper .scroll-wrapper {
