@@ -19,7 +19,7 @@
     <div class="row">
         <div class="toggle-wrapper">
           <div class="states">
-            <small ng-click="showStates = !showStates">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
+            <small ng-click="showStates = !showStates" ng-class="{'open': showStates}">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
             <ul ng-if="showStates">
               <li ng-repeat="state in usStates" class="clearfix">
                 <span>{{state}}</span>
@@ -32,7 +32,7 @@
           </div>
 
           <div class="policies">
-            <small ng-click="showPolicies = !showPolicies">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
+            <small ng-click="showPolicies = !showPolicies" ng-class="{'open': showPolicies}">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
             <ul ng-if="showPolicies">
               <li ng-repeat="policy in policyTypes" class="clearfix">
                 <span>{{policy}}</span>

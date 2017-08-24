@@ -480,7 +480,7 @@ html, body {
     }
 
     .overview-title {
-      margin: 0;
+      margin: 0 0 15px 0;
     }
 
     .filter-wrapper {
@@ -908,13 +908,16 @@ html, body {
       small {
         cursor: pointer;
         text-transform: uppercase;
-        color: #3B5763;
-        font-weight: bold;
+        color: #9e9e9e;
         font-size: 12px;
         letter-spacing: 1px;
         display: block;
         width: 100%;
-        margin: 0 0 15px 0;
+        margin: 0 0 5px 0;
+
+        &.open {
+          color: #3B5763;
+        }
       }
 
       i {
@@ -930,6 +933,12 @@ html, body {
       .states,
       .policies {
         // background: #ccc;
+
+        &:hover {
+          small {
+            color: #3B5763;
+          }
+        }
 
         ul {
           background: white;

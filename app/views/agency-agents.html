@@ -6,11 +6,11 @@
            placeholder="Search Agent"
            aria-label="Username"
            aria-describedby="basic-addon1"
-           ng-model="query">
+           ng-model="searchAgents">
   </div>
 
   <uib-tabset active="activePill" vertical="true" type="pills">
-    <uib-tab index="$index + 1" ng-repeat="agent in agencyAgents | filter:search">
+    <uib-tab index="$index + 1" ng-repeat="agent in agencyAgents | filter:searchAgents">
     <uib-tab-heading>
       <img ng-src="{{agent.photo}}" class="profile-img">
       <div class="profile-meta">
