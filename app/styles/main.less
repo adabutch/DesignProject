@@ -433,7 +433,6 @@ html, body {
     .meta-group {
       // background: #f02;
       float: left;
-      margin: 31px 0 0 0;
     }
 
     h1 {
@@ -879,7 +878,7 @@ html, body {
     position: fixed;
     width: ~"calc(100% - 30px)";
     height: ~"calc(100% - 275px)";
-    top: 233px;
+    top: 203px;
     // background: #f02;
 
     .scroll-wrapper {
@@ -903,6 +902,10 @@ html, body {
       .dropdown-toggle {
         color: white;
         background: #3B5763;
+
+        &:hover {
+          background: darken(#3B5763, 5%);
+        }
       }
 
       .dropdown-menu {

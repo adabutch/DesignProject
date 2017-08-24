@@ -393,7 +393,6 @@ body .overview-header .logo-group .logo {
 html .overview-header .meta-group,
 body .overview-header .meta-group {
   float: left;
-  margin: 31px 0 0 0;
 }
 html .overview-header h1,
 body .overview-header h1 {
@@ -812,7 +811,7 @@ body .agency-overview-wrapper {
   position: fixed;
   width: calc(100% - 30px);
   height: calc(100% - 275px);
-  top: 233px;
+  top: 203px;
 }
 html .agency-overview-wrapper .scroll-wrapper,
 body .agency-overview-wrapper .scroll-wrapper {
@@ -836,6 +835,10 @@ html .agency-overview-wrapper .button-wrapper .dropdown-toggle,
 body .agency-overview-wrapper .button-wrapper .dropdown-toggle {
   color: white;
   background: #3B5763;
+}
+html .agency-overview-wrapper .button-wrapper .dropdown-toggle:hover,
+body .agency-overview-wrapper .button-wrapper .dropdown-toggle:hover {
+  background: #314953;
 }
 html .agency-overview-wrapper .button-wrapper .dropdown-menu,
 body .agency-overview-wrapper .button-wrapper .dropdown-menu {
