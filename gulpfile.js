@@ -30,7 +30,7 @@ var onError = function (err) {
 }
 
 gulp.task('less', function () {
-  return gulp.src('app/styles/**/*.less')
+  return gulp.src('app/styles/**/main.less')
     .pipe(plumber({ errorHandle: onError }))
     .pipe(less())
     .on('error', onError)
