@@ -1,7 +1,8 @@
-@import   "colors.less";
+@import   "vars.less";
+
 .overview-title {
   text-transform: uppercase;
-  color: #3B5763;
+  color: @base-blue;
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 1px;
@@ -45,7 +46,6 @@
   }
 
   .logo-group {
-    // background: #f02;
     float: left;
     margin: 0 50px 0 0;
 
@@ -56,32 +56,30 @@
   }
 
   .meta-group {
-    // background: #f02;
     float: left;
   }
 
   h1 {
     font-size: 20px;
     line-height: 20px;
-    color: darken(#5E5E5E, 10%);
+    color: darken(@strong-grey, 10%);
     font-weight: 400;
     letter-spacing: 1px;
     margin: 0 0 15px 0;
   }
 
   ul {
-    // background: #0f2;
     margin: 0;
     padding: 0;
 
     li {
       display: inline-block;
-      color: lighten(#5E5E5E, 25%);
+      color: lighten(@strong-grey, 25%);
       font-size: 14px;
       margin: 0 20px 0 0;
 
       strong {
-        color: #5E5E5E;
+        color: @strong-grey;
       }
 
       span {

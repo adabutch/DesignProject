@@ -1,13 +1,16 @@
-@import   "colors.less";
+@import   "vars.less";
+
 table,
 .table {
   margin: 0;
 
   thead {
+    border-top: 1px solid @secondary-grey;
+    border-bottom: 1px solid @secondary-grey;
+
     th {
       vertical-align: bottom;
-      border-bottom: 2px solid #e9ecef;
-      color: #3B5763;
+      color: @base-blue;
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 1px;

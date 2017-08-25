@@ -1,15 +1,14 @@
-@import   "colors.less";
+@import   "vars.less";
+
 .agency-overview-wrapper {
     position: fixed;
+    top: 236px;
     width: ~"calc(100% - 30px)";
     height: ~"calc(100% - 275px)";
-    top: 236px;
-    // background: #f02;
 
     .scroll-wrapper {
       overflow-x: scroll;
       height: ~"calc(100% - 54px)";
-      // background: #ccc;
     }
 
     .button-wrapper {
@@ -26,10 +25,10 @@
 
       .dropdown-toggle {
         color: white;
-        background: #3B5763;
+        background: @base-blue;
 
         &:hover {
-          background: darken(#3B5763, 5%);
+          background: darken(@base-blue, 5%);
         }
       }
 
@@ -61,27 +60,15 @@
   }
 
   .agency-wrapper {
-    // background: #f02;
     position: fixed;
     margin: -15px 0 0 0;
-    // width: ~"calc(100% - 30px)";
-    // height: 100%;
-    // top: 237px;
-
-    // overflow: hidden;
-    // height: ~"calc(100% - 395px)";
-    // overflow-x: scroll;
-    // height: ~"calc(100% - 329px)";
-    // width: ~"calc(100% - 30px)";
-    // background: #ccc;
 
     .toggle-wrapper {
       position: fixed;
-      overflow: scroll;
-      // background: #5195ce;
       left: 15px;
       width: 220px;
       height: ~"calc(100% - 329px)";
+      overflow: scroll;
 
       small {
         cursor: pointer;
@@ -94,7 +81,7 @@
         margin: 0 0 5px 0;
 
         &.open {
-          color: #3B5763;
+          color: @base-blue;
         }
       }
 
@@ -110,11 +97,10 @@
 
       .states,
       .policies {
-        // background: #ccc;
 
         &:hover {
           small {
-            color: #3B5763;
+            color: @base-blue;
           }
         }
 
@@ -126,12 +112,12 @@
           margin: 0;
           padding: 15px;
           border-radius: 2px;
-          border: 1px solid darken(#f5f5f5, 5%);
+          border: 1px solid darken(@lite-grey, 5%);
           font-size: 12px;
 
           li {
             margin: 0 0 10px 0;
-            border-bottom: 1px solid #f5f5f5;
+            border-bottom: 1px solid @lite-grey;
 
             &:last-child {
               margin: 0;
@@ -140,7 +126,7 @@
 
             &:hover {
               span {
-                color: #212529;
+                color: @secondary-blue;
               }
             }
 
@@ -173,11 +159,10 @@
         padding: 0;
         background: white;
         border-radius: 2px;
-        border: 1px solid darken(#f5f5f5, 5%);
+        border: 1px solid darken(@lite-grey, 5%);
 
         .agency-tabbed-wrapper {
           .tab-content {
-            // background: #000;
             position: fixed;
             right: 15px;
             width: ~"calc(100% - 477px)";

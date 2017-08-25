@@ -1,6 +1,7 @@
-@import   "colors.less";
+@import   "vars.less";
+
 .agency-tabbed-wrapper {
-  // universtal
+  // universal
   .nav-pills {
     width: 211px;
     height: 100%;
@@ -12,13 +13,13 @@
     li {
       display: block;
       width: 100%;
-      border-right: 1px solid #f5f5f5;
-      border-bottom: 1px solid #f5f5f5;
+      border-right: 1px solid @lite-grey;
+      border-bottom: 1px solid @lite-grey;
 
       &.active,
       &:hover {
         border-right: none;
-        background: #f5f5f5;
+        background: @lite-grey;
       }
 
       a {
@@ -45,7 +46,6 @@
       }
 
       .profile-meta {
-        // background: #f02;
         display: inline-block;
         vertical-align: middle;
 
@@ -53,7 +53,7 @@
           display: block;
 
           &.name {
-            color: #5E5E5E;
+            color: @strong-grey;
             font-weight: bold;
           }
 
@@ -73,7 +73,7 @@
     }
 
     .tab-content {
-      background: #f5f5f5 !important;
+      background: @lite-grey !important;
       padding-bottom: 0 !important;
     }
 
@@ -82,11 +82,10 @@
         position: fixed;
         z-index: 1;
         width: ~"calc(100% - 478px)";
-        // background: #f02;
         margin: -15px 0 20px 0;
         padding: 19px 0 16px 0;
         background: white;
-        border-bottom: 1px solid #f5f5f5;
+        border-bottom: 1px solid @lite-grey;
 
         span {
           text-transform: uppercase;
@@ -97,7 +96,7 @@
 
           &.license-status {
             &.valid {
-              color: #08B46E;
+              color: @base-green;
             }
           }
 
@@ -110,7 +109,7 @@
     .form-agent-body {
       margin: 39px -15px 0 -15px;
       padding: 15px 0;
-      background: #f5f5f5;
+      background: @lite-grey;
 
       h1 {
         color: darken(@secondary-grey, 10%);
@@ -134,14 +133,8 @@
           width: 125px;
           height: 125px;
           background: white;
-          border: 2px solid #e8e8e8;
+          border: 2px solid darken(@base-grey, 10%);
           padding: 3px;
-        }
-      }
-
-      i {
-        &.placeholder {
-
         }
       }
     }
@@ -151,8 +144,8 @@
       position: fixed;
       width: 211px;
       padding: 15px;
-      border-right: 1px solid #f5f5f5;
-      border-bottom: 1px solid #f5f5f5;
+      border-right: 1px solid @lite-grey;
+      border-bottom: 1px solid @lite-grey;
 
       .input-group-addon {
         padding: 0 15px 5px 0;
@@ -184,7 +177,7 @@
           color: @secondary-grey;
 
           &.active {
-            color: #3B5763
+            color: @base-blue;
           }
         }
       }

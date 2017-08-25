@@ -1,20 +1,19 @@
-@import   "colors.less";
+@import   "vars.less";
+
 .nav-tabs {
-  // background: #f02;
   padding: 0 0 0 30px;
   border-bottom: none;
 
   li {
     &.nav-item {
-      // background: #ccc;
       z-index: 2;
       margin: 0;
-      border: 1px solid darken(#f5f5f5, 5%);
+      border: 1px solid darken(@lite-grey, 5%);
       border-bottom: none;
       border-right: none;
 
       &:last-child {
-        border-right: 1px solid darken(#f5f5f5, 5%);
+        border-right: 1px solid darken(@lite-grey, 5%);
       }
 
       &.active {
@@ -22,7 +21,7 @@
 
         a {
           &.nav-link {
-            color: #3B5763;
+            color: @base-blue;
           }
         }
       }
@@ -41,7 +40,7 @@
 
           &:hover{
             border: 0;
-            color: #3B5763;
+            color: @base-blue;
           }
         }
       }

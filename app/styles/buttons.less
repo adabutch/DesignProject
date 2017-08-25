@@ -1,4 +1,5 @@
-@import   "colors.less";
+@import   "vars.less";
+
 button {
   cursor: pointer;
 }
@@ -21,43 +22,42 @@ button {
 
 .btn-add,
 .btn-save {
-  // float: right;
-  background: #08B46E;
+  background: @base-green;
   color: white;
 
   &:hover {
-    background: darken(#08B46E, 3%);
+    background: darken(@base-green, 3%);
   }
 }
 
 .btn-cancel {
   display: block;
-  background: #d9534f;
+  background: @base-red;
   color: white;
 
   &:hover {
-    background: darken(#d9534f, 10%);
+    background: darken(@base-red, 10%);
   }
 }
 
 .btn-view {
   margin: 7px 0 0 0;
   display: block;
-  background: #3B5763;
+  background: @base-blue;
   color: white;
 
   &:hover {
-    background: #274753;
+    background: darken(@base-blue, 10%);
   }
 }
 
 .btn-upload {
   display: block;
   margin: 0 auto;
-  background: #007bff;
+  background: @base-blue;
   color: white;
 
   &:hover {
-    background: darken(#007bff, 2%);
+    background: darken(@base-blue, 10%);
   }
 }
