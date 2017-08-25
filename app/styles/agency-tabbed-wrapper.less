@@ -1,3 +1,4 @@
+@import   "colors.less";
 .agency-tabbed-wrapper {
   // universtal
   .nav-pills {
@@ -22,7 +23,7 @@
 
       a {
         font-size: 12px;
-        color: #9e9e9e;
+        color: @secondary-grey;
 
         i {
           margin: 3px 0 0 0;
@@ -89,7 +90,7 @@
 
         span {
           text-transform: uppercase;
-          color: #9e9e9e;
+          color: @secondary-grey;
           font-size: 12px;
           letter-spacing: 1px;
           display: inline-block;
@@ -112,7 +113,7 @@
       background: #f5f5f5;
 
       h1 {
-        color: darken(#9e9e9e, 10%);
+        color: darken(@secondary-grey, 10%);
         margin: 0 0 10px 0;
         font-size: 30px;
         font-weight: 400;
@@ -123,7 +124,7 @@
         &.state-licensed {
           display: block;
           margin: 0 0 15px 0;
-          color: #9e9e9e;
+          color: @secondary-grey;
         }
       }
 
@@ -180,7 +181,7 @@
           font-size: 12px;
           letter-spacing: 1px;
           font-weight: 600;
-          color: #9e9e9e;
+          color: @secondary-grey;
 
           &.active {
             color: #3B5763
