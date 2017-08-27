@@ -1015,6 +1015,167 @@ html .agency-tabbed-wrapper.agents .agent-search span.order-by.active,
 body .agency-tabbed-wrapper.agents .agent-search span.order-by.active {
   color: #3B5763;
 }
+@media (max-width: 575px) {
+  html .overview-title,
+  body .overview-title {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header,
+  body .overview-header {
+    padding: 15px;
+  }
+  html .overview-header .logo-group,
+  body .overview-header .logo-group {
+    float: none;
+    margin: 0;
+  }
+  html .overview-header .logo-group .logo,
+  body .overview-header .logo-group .logo {
+    max-width: 100%;
+    width: 175px;
+    margin: 0 0 5px 0;
+  }
+  html .overview-header h1,
+  body .overview-header h1 {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header ul li,
+  body .overview-header ul li {
+    font-size: 12px;
+    margin: 0;
+  }
+  html .agency-cells-wrapper,
+  body .agency-cells-wrapper {
+    top: 230px;
+  }
+  html .agency-cells-wrapper .filter-wrapper,
+  body .agency-cells-wrapper .filter-wrapper {
+    margin: 5px 0;
+    float: none;
+  }
+  html .agency-cells-wrapper .filter-wrapper .input-group,
+  body .agency-cells-wrapper .filter-wrapper .input-group {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  html .agency-cells-wrapper .btn-add,
+  body .agency-cells-wrapper .btn-add {
+    margin: -30px 0 15px 0;
+  }
+  html .agency-cells-wrapper .scroll-wrapper .agency-cell ul li,
+  body .agency-cells-wrapper .scroll-wrapper .agency-cell ul li {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  html .overview-title,
+  body .overview-title {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header,
+  body .overview-header {
+    padding: 15px;
+  }
+  html .overview-header .logo-group,
+  body .overview-header .logo-group {
+    float: none;
+    margin: 0;
+  }
+  html .overview-header .logo-group .logo,
+  body .overview-header .logo-group .logo {
+    max-width: 100%;
+    width: 175px;
+    margin: 0 0 5px 0;
+  }
+  html .overview-header h1,
+  body .overview-header h1 {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header ul li,
+  body .overview-header ul li {
+    font-size: 12px;
+    margin: 0;
+  }
+  html .agency-cells-wrapper,
+  body .agency-cells-wrapper {
+    top: 230px;
+  }
+  html .agency-cells-wrapper .filter-wrapper,
+  body .agency-cells-wrapper .filter-wrapper {
+    margin: 5px 0;
+    float: none;
+  }
+  html .agency-cells-wrapper .filter-wrapper .input-group,
+  body .agency-cells-wrapper .filter-wrapper .input-group {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  html .agency-cells-wrapper .btn-add,
+  body .agency-cells-wrapper .btn-add {
+    margin: -30px 0 15px 0;
+  }
+  html .agency-cells-wrapper .scroll-wrapper .agency-cell ul li,
+  body .agency-cells-wrapper .scroll-wrapper .agency-cell ul li {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html .overview-title,
+  body .overview-title {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header,
+  body .overview-header {
+    padding: 15px;
+  }
+  html .overview-header .logo-group,
+  body .overview-header .logo-group {
+    float: none;
+    margin: 0;
+  }
+  html .overview-header .logo-group .logo,
+  body .overview-header .logo-group .logo {
+    max-width: 100%;
+    width: 175px;
+    margin: 0 0 5px 0;
+  }
+  html .overview-header h1,
+  body .overview-header h1 {
+    margin: 0 0 5px 0;
+  }
+  html .overview-header ul li,
+  body .overview-header ul li {
+    font-size: 12px;
+  }
+  html .agency-cells-wrapper,
+  body .agency-cells-wrapper {
+    top: 230px;
+  }
+  html .agency-cells-wrapper .filter-wrapper,
+  body .agency-cells-wrapper .filter-wrapper {
+    margin: 5px 0;
+    float: none;
+  }
+  html .agency-cells-wrapper .filter-wrapper .input-group,
+  body .agency-cells-wrapper .filter-wrapper .input-group {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  html .agency-cells-wrapper .btn-add,
+  body .agency-cells-wrapper .btn-add {
+    margin: -30px 0 15px 0;
+  }
+  html .agency-cells-wrapper .scroll-wrapper .agency-cell ul li,
+  body .agency-cells-wrapper .scroll-wrapper .agency-cell ul li {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
 html p,
 body p {
   font-size: 14px;
