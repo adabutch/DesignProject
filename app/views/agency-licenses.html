@@ -1,4 +1,15 @@
 <div class="agency-tabbed-wrapper license clearfix">
+  <div class="button-wrapper sml license-select">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select State
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" ng-repeat="state in usStates">{{state}}</a>
+      </div>
+    </div>
+  </div>
+
   <uib-tabset active="activePill" vertical="true" type="pills">
     <uib-tab index="$index + 1" ng-repeat="state in usStates">
     <uib-tab-heading> {{state}} <i class='fa fa-angle-right pull-right'></i> </uib-tab-heading>

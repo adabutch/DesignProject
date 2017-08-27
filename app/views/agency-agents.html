@@ -1,4 +1,15 @@
 <div class="agency-tabbed-wrapper agents clearfix">
+  <div class="button-wrapper sml agents-select">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select Agent
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" ng-repeat="agent in agencyAgents">{{agent.name}} {{agent.surname}}</a>
+      </div>
+    </div>
+  </div>
+
   <div class="input-group agent-search">
     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
     <input type="text"
