@@ -13,7 +13,7 @@
   <uib-tabset active="activePill" vertical="true" type="pills">
     <uib-tab index="$index + 1" ng-repeat="state in usStates">
     <uib-tab-heading> {{state}} <i class='fa fa-angle-right pull-right'></i> </uib-tab-heading>
-      <p>Licenses applicable in {{state}}.</p>
+      <p>Licenses applicable in <strong>{{state}}</strong>.</p>
       <table class="table table-fixed table-sm table-striped table-responsive">
         <thead>
           <tr>

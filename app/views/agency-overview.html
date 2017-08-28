@@ -20,6 +20,7 @@
         <div class="toggle-wrapper">
           <div class="states">
             <small ng-click="showStates = !showStates" ng-class="{'open': showStates}">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
+            <p>States this Agency operates in.</p>
             <ul ng-if="showStates">
               <li ng-repeat="state in usStates" class="clearfix">
                 <span>{{state}}</span>
@@ -33,6 +34,7 @@
 
           <div class="policies">
             <small ng-click="showPolicies = !showPolicies" ng-class="{'open': showPolicies}">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
+            <p>Policy types this Agency carries.</p>
             <ul ng-if="showPolicies">
               <li ng-repeat="policy in policyTypes" class="clearfix">
                 <span>{{policy}}</span>
