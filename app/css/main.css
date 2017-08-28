@@ -272,6 +272,11 @@ body form input.form-control {
   font-size: 14px;
   border-radius: 2px;
 }
+html form select.custom-select,
+body form select.custom-select {
+  font-size: 14px;
+  padding: 5px 10px;
+}
 html input::-webkit-input-placeholder,
 body input::-webkit-input-placeholder {
   opacity: 1;
