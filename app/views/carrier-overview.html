@@ -27,7 +27,7 @@
   </div>
 
   <div class="scroll-wrapper">
-    <p ng-if="false">No results</p>
+    <p ng-show="(carrierAgencies | filter:agencySearch).length == 0">Sorry, no results found for <strong>{{agencySearch}}</strong>.</p>
     <agency-cells></agency-cells>
   </div><!-- /.scroll-wrapper -->
 </div><!-- /.agency-cells-wrapper -->
