@@ -90,8 +90,9 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
     name: 'Tabs'
   };
 
-  $scope.addingLicense = false;
+  $scope.examCheck = true;
 
+  $scope.addingLicense = false;
   $scope.addAgentLicense = function(){
     $scope.addingLicense = true;
   };

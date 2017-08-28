@@ -1,22 +1,24 @@
 <div class="row">
   <div class="col-md-7">
+    <div class="form-group">
+      <label>Exam Required (<span ng-if="examCheck">Yes</span><span ng-if="!examCheck">No</span>)</label>
+      <div class="toggler">
+        <input class="toggle" id="exam" type="checkbox" ng-model="examCheck">
+        <label class="toggle-btn" for="exam"></label>
+      </div>
+    </div>
 
     <div class="form-group">
       <label>State</label>
-      <select>
+      <select class="custom-select">
         <option selected>Select state</option>
         <option value="{{state}}" ng-repeat="state in usStates">{{state}}</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label>Exam Required</label>
-      yes / no
-    </div>
-
-    <div class="form-group">
       <label>License Class</label>
-      <select>
+      <select class="custom-select">
         <option selected>Select License Class</option>
         <option value="{{license.class}}" ng-repeat="license in agencyLicenses | unique: 'class'">{{license.class}}</option>
       </select>
@@ -24,7 +26,7 @@
 
     <div class="form-group">
       <label>Line of Authority</label>
-      <select>
+      <select class="custom-select">
         <option selected>Select LOA</option>
         <option value="{{license.loa}}" ng-repeat="license in agencyLicenses | unique: 'loa'">{{license.loa}}</option>
       </select>
@@ -44,7 +46,7 @@
   <div class="col-md-5">
     <div class="drag-n-drop-wrapper">
       <i class="fa fa-file-text-o pdf-icon" aria-hidden="true"></i>
-      <label>Upload License PDF</label>
+      <label class="text-center">Upload License PDF</label>
       <small>Drag &amp; Drop PDF License copy here.</small>
     </div>
 
