@@ -35,7 +35,6 @@ body .btn-save:hover {
 }
 html .btn-cancel,
 body .btn-cancel {
-  display: block;
   background: #d9534f;
   color: white;
 }
@@ -126,6 +125,7 @@ body .drag-n-drop-wrapper i.pdf-icon {
 }
 html .drag-n-drop-wrapper small,
 body .drag-n-drop-wrapper small {
+  font-size: 10px;
   color: #9e9e9e;
 }
 html .progress-wrapper,

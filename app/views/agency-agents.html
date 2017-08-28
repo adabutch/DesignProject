@@ -21,7 +21,7 @@
   </div>
 
   <uib-tabset active="activePill" vertical="true" type="pills">
-    <uib-tab index="$index + 1" ng-repeat="agent in agencyAgents | filter:searchAgents">
+    <uib-tab index="$index + 1" ng-repeat="agent in agencyAgents | filter:searchAgents" ng-click="cancelAddAgentLicense()">
     <uib-tab-heading>
       <img ng-src="{{agent.photo}}" class="profile-img">
       <div class="profile-meta">
@@ -47,40 +47,63 @@
 
         <div class="col-md-10">
           <h1>{{agent.name}} {{agent.surname}}</h1>
-          <small class="state-licensed">Licensed in <strong>five</strong> states</small>
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <label class="form-control-label" for="formGroupExampleInput">First Name</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" ng-model="agent.name" placeholder="First Name">
+          <small class="state-licensed" ng-if="!addingLicense">Licensed in <strong>five</strong> states.</small>
+          <small class="state-licensed" ng-if="addingLicense">Add agent License.</small>
+
+          <div ng-include="addAgentLicenseTmpl" ng-if="addingLicense"></div>
+          <div ng-if="!addingLicense">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label class="form-control-label" for="formGroupExampleInput">First Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" ng-model="agent.name" placeholder="First Name">
+              </div>
+
+              <div class="col-md-6 form-group">
+                <label class="form-control-label" for="formGroupExampleInput">Last Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" ng-model="agent.surname" placeholder="Last Name">
+              </div>
             </div>
 
-            <div class="col-md-6 form-group">
-              <label class="form-control-label" for="formGroupExampleInput">Last Name</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" ng-model="agent.surname" placeholder="Last Name">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="exampleInputEmail1">Agent Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" ng-model="agent.email" placeholder="Email">
+              </div>
+
+              <div class="col-md-6 form-group">
+                <label class="form-control-label" for="formGroupExampleInput">Agent Phone</label>
+                <input class="input-phone form-control" type="text" phone-input ng-model="agent.phone" placeholder="Agent Phone"/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput">Agent Location</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Agent Location" value="Bloomington, IN">
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <label for="exampleInputEmail1">Agent Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" ng-model="agent.email" placeholder="Email">
-            </div>
+          <div ng-if="addingLicense">
+            <div class="row button-wrapper sml">
+              <div class="col-md-12">
+                <a href ng-click="cancelAddAgentLicense()" class="btn btn-add">
+                  <i class="fa fa-check left" aria-hidden="true"></i>
+                  Save
+                </a>
 
-            <div class="col-md-6 form-group">
-              <label class="form-control-label" for="formGroupExampleInput">Agent Phone</label>
-              <input class="input-phone form-control" type="text" phone-input ng-model="agent.phone" placeholder="Agent Phone"/>
+                <a href ng-click="cancelAddAgentLicense()" class="btn btn-cancel">
+                  <i class="fa fa-times left" aria-hidden="true"></i>
+                  Cancel
+                </a>
+              </div>
             </div>
+            <div ng-include="'views/add-license.html'"></div>
           </div>
 
-          <div class="form-group">
-            <label class="form-control-label" for="formGroupExampleInput">Agent Location</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Agent Location" value="Bloomington, IN">
-          </div>
 
-          <div class="row button-wrapper sml">
+          <div class="row button-wrapper sml" ng-if="!addingLicense">
             <div class="col-md-12">
               <div class="dropdown">
-                <a href="" class="btn btn-add">
+                <a href ng-click="addAgentLicense()" class="btn btn-add">
                   <i class="fa fa-plus left" aria-hidden="true"></i>
                   Add License
                 </a>
@@ -98,81 +121,34 @@
             </div>
           </div>
 
-          <table class="table table-fixed table-sm table-striped table-responsive">
-          <thead>
-            <tr>
-              <th>Exam</th>
-              <th>Class</th>
-              <th>LOA</th>
-              <th>Issued</th>
-              <th>Expires</th>
-              <th>PDF</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="license in agencyLicenses">
-              <td><i class="fa exam" ng-class="{'fa-check': license.exam == true}" aria-hidden="true"></i></td>
-              <td>{{license.class}}</td>
-              <td>{{license.loa}}</td>
-              <td>{{license.issued}}</td>
-              <td>{{license.expires}}</td>
-              <td><a href="{{license.pdf}}">View</a></td>
-              <td>
-                <i class="fa fa-times remove" aria-hidden="true" title="remove"></i>
-                <i class="fa fa-pencil-square-o edit" aria-hidden="true" title="edit"></i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <table class="table table-fixed table-sm table-striped table-responsive" ng-if="!addingLicense">
+            <thead>
+              <tr>
+                <th>Exam</th>
+                <th>Class</th>
+                <th>LOA</th>
+                <th>Issued</th>
+                <th>Expires</th>
+                <th>PDF</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="license in agencyLicenses">
+                <td><i class="fa exam" ng-class="{'fa-check': license.exam == true}" aria-hidden="true"></i></td>
+                <td>{{license.class}}</td>
+                <td>{{license.loa}}</td>
+                <td>{{license.issued}}</td>
+                <td>{{license.expires}}</td>
+                <td><a href="{{license.pdf}}">View</a></td>
+                <td>
+                  <i class="fa fa-times remove" aria-hidden="true" title="remove"></i>
+                  <i class="fa fa-pencil-square-o edit" aria-hidden="true" title="edit"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-
-
-
-
-        <!-- <div class="row">
-          <div class="col-md-12">
-            <div class="drag-n-drop-wrapper">
-              <i class="fa fa-file-text-o pdf-icon" aria-hidden="true"></i>
-              <small>Drag &amp; Drop PDF here.</small>
-            </div>
-
-            <button type="button" class="btn btn-upload">
-              <i class="fa fa-upload left" aria-hidden="true"></i>
-              Choose File
-            </button>
-
-            <div class="progress-wrapper">
-              <div class="upload-status success clearfix">
-                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
-                <small><strong>Success:</strong> license-pdf.pdf</small>
-                <div class="progress pull-left">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%; height: 2px;"></div>
-                </div>
-                <i class="fa fa-check-circle-o status-icon success" aria-hidden="true"></i>
-              </div>
-
-              <div class="upload-status success clearfix">
-                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
-                <small><strong>Uploading:</strong> license-pdf.pdf</small>
-                <div class="progress pull-left">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%; height: 2px;"></div>
-                </div>
-                <i class="fa fa-spinner fa-spin status-icon uploading" aria-hidden="true"></i>
-              </div>
-
-              <div class="upload-status success clearfix">
-                <i class="fa fa-file-text-o pdf-icon pull-left" aria-hidden="true"></i>
-                <small><strong>Error:</strong> Invalid File Format</small>
-                <div class="progress pull-left">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%; height: 2px;"></div>
-                </div>
-                <i class="fa fa-times status-icon error" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </form>
     </uib-tab>

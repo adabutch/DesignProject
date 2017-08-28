@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("designProject", ["ngRoute","ui.bootstrap"]);
+var app = angular.module("designProject", ["ngRoute","ui.bootstrap","angular.filter"]);
 
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider
@@ -12,7 +12,7 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl : "views/agency-overview.html",
     controller : "AgencyOverviewCtrl"
   })
-  .when("/agency/add-license", {
+  .when("/agency/agent/add-license", {
     templateUrl : "views/agency-overview.html",
     controller : "AgencyOverviewCtrl"
   })
@@ -66,7 +66,7 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
     console.log(response.statusText + " " + response.agencyLicenses);
   });
 
-  var url = "https://uinames.com/api/?ext&amount=75&region=united%20states&callback=JSON_CALLBACK";
+  var url = "https://uinames.com/api/?ext&amount=20&region=united%20states&callback=JSON_CALLBACK";
   $http.jsonp(url)
   .success(function(data) {
     $scope.agencyAgents = data;
@@ -89,6 +89,26 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
   $scope.model = {
     name: 'Tabs'
   };
+
+  $scope.addingLicense = false;
+
+  $scope.addAgentLicense = function(){
+    $scope.addingLicense = true;
+  };
+
+  $scope.cancelAddAgentLicense = function(){
+    $scope.addingLicense = false;
+  };
+
+  // datepicker
+  // note: ui datepicker is broken w. bootstrap v4
+  $scope.dateFormat = 'MM/dd/yyyy';
+  $scope.issueDate = new Date();
+  $scope.year = $scope.issueDate.getFullYear();
+  $scope.month = $scope.issueDate.getMonth();
+  $scope.day = $scope.issueDate.getDate();
+  $scope.expirationDate = new Date($scope.year + 1, $scope.month, $scope.day);
+  //end DP
 });
 
 app.directive('phoneInput', function($filter, $browser) {
