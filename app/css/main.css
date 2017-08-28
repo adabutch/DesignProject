@@ -470,7 +470,7 @@ body .nav-tabs li.nav-item a.nav-link:hover {
 html .overview-title,
 body .overview-title {
   text-transform: uppercase;
-  color: #3B5763;
+  color: #219da6;
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 1px;
@@ -754,6 +754,7 @@ body .agency-wrapper .toggle-wrapper {
   width: 220px;
   height: calc(100% - 329px);
   overflow: scroll;
+  z-index: 10;
 }
 html .agency-wrapper .toggle-wrapper small,
 body .agency-wrapper .toggle-wrapper small {
@@ -844,6 +845,7 @@ body .agency-wrapper .tab-content-wrapper {
   right: 15px;
   width: calc(100% - 265px);
   height: calc(100% - 329px);
+  z-index: 1;
 }
 html .agency-wrapper .tab-content-wrapper .tab-content,
 body .agency-wrapper .tab-content-wrapper .tab-content {

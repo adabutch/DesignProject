@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("designProject", ["ngRoute","ui.bootstrap","angular.filter"]);
+var app = angular.module("designProject", ["ngRoute","ui.bootstrap","angular.filter","matchMedia"]);
 
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider
@@ -27,14 +27,6 @@ app.controller("CarrierOverviewCtrl", function($scope, $http) {
     console.log(response.statusText + " " + response.status);
   });
 
-  $scope.search = function (key) {
-    return (angular.lowercase(key.agencyName).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-    angular.lowercase(key.contact).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-    angular.lowercase(key.headquarters.city).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-    angular.lowercase(key.headquarters.state).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-    angular.lowercase(key.headquarters.stateAbbr).indexOf(angular.lowercase($scope.query) || '') !== -1);
-  };
-
   $scope.propertyName = 'established';
   $scope.reverse = true;
 
@@ -44,7 +36,13 @@ app.controller("CarrierOverviewCtrl", function($scope, $http) {
   };
 });
 
-app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $location) {
+app.directive('agencyCells', function() {
+  return {
+    templateUrl: 'views/agency-cells.html'
+  };
+});
+
+app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $location, screenSize) {
   $http.get("json/us-states.json")
   .then(function(response) {
     $scope.usStates = response.data;
@@ -73,7 +71,29 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
   });
 
   $scope.showStates = false;
-  $scope.showPolicies = true;
+  $scope.showPolicies = false;
+
+  $scope.toggleStates = function(){
+    if(!$scope.showStates) {
+      $scope.showStates = true;
+    } else {
+      $scope.showStates = false;
+    }
+    $scope.showPolicies = false;
+  };
+
+  $scope.togglePolicies = function(){
+    if(!$scope.showPolicies) {
+      $scope.showPolicies = true;
+    } else {
+      $scope.showPolicies = false;
+    }
+    $scope.showStates = false;
+  };
+
+  $scope.isMobile = screenSize.on('xs, sm', function(isMatch){
+    $scope.isMobile = isMatch;
+  });
 
   $scope.tabs = [
   {

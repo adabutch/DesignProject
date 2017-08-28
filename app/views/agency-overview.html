@@ -17,45 +17,44 @@
 
   <div class="agency-wrapper">
     <div class="row">
-        <div class="toggle-wrapper">
-          <div class="states">
-            <small ng-click="showStates = !showStates" ng-class="{'open': showStates}">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
-            <p><strong>States</strong> this Agency operates in.</p>
-            <ul ng-if="showStates">
-              <li ng-repeat="state in usStates" class="clearfix">
-                <span>{{state}}</span>
-                <div class="toggler">
-                  <input class="toggle" id="{{state}}" type="checkbox">
-                  <label class="toggle-btn" for="{{state}}"></label>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="policies">
-            <small ng-click="showPolicies = !showPolicies" ng-class="{'open': showPolicies}">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
-            <p><strong>Policy types</strong> this Agency carries.</p>
-            <ul ng-if="showPolicies">
-              <li ng-repeat="policy in policyTypes" class="clearfix">
-                <span>{{policy}}</span>
-                <div class="toggler">
-                  <input class="toggle" id="{{policy}}" type="checkbox">
-                  <label class="toggle-btn" for="{{policy}}"></label>
-                </div>
-              </li>
-            </ul>
-          </div>
+      <div class="toggle-wrapper">
+        <div class="states">
+          <small ng-click="toggleStates()" ng-class="{'open': showStates}">Operational States <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showStates, 'fa-eye-slash': !showStates}" aria-hidden="true"></i></small>
+          <p><strong>States</strong> this Agency operates in.</p>
+          <ul ng-if="showStates">
+            <li ng-repeat="state in usStates" class="clearfix">
+              <span>{{state}}</span>
+              <div class="toggler">
+                <input class="toggle" id="{{state}}" type="checkbox">
+                <label class="toggle-btn" for="{{state}}"></label>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <div class="tab-content-wrapper">
-          <uib-tabset active="activeTab">
-            <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}">
-              <div ng-include="tab.content"></div>
-            </uib-tab>
-          </uib-tabset>
+        <div class="policies">
+          <small ng-click="togglePolicies()" ng-class="{'open': showPolicies}">Policy Types <i class="fa visual-icon pull-right" ng-class="{'fa-eye': showPolicies, 'fa-eye-slash': !showPolicies}" aria-hidden="true"></i></small>
+          <p><strong>Policy types</strong> this Agency carries.</p>
+          <ul ng-if="showPolicies">
+            <li ng-repeat="policy in policyTypes" class="clearfix">
+              <span>{{policy}}</span>
+              <div class="toggler">
+                <input class="toggle" id="{{policy}}" type="checkbox">
+                <label class="toggle-btn" for="{{policy}}"></label>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <!-- {{isMobile}} {{!isMobile}} -->
+      <div class="tab-content-wrapper">
+        <uib-tabset active="activeTab">
+          <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}">
+            <div ng-include="tab.content"></div>
+          </uib-tab>
+        </uib-tabset>
+      </div>
     </div>
   </div>
-
-  <!-- <div class="scroll-wrapper"></div> -->
 </div>
