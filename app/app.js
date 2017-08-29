@@ -38,6 +38,7 @@ app.controller("CarrierOverviewCtrl", function($scope, $http) {
 
 app.directive('agencyCells', function() {
   return {
+    restrict: 'E',
     templateUrl: 'views/agency-cells.html'
   };
 });
