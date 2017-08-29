@@ -23,8 +23,8 @@ app.controller("CarrierOverviewCtrl", function($scope, $http) {
   $http.get("json/carrier-agencies.json")
   .then(function(response) {
     $scope.carrierAgencies = response.data;
-  }, function myError(response) {
-    console.log(response.statusText + " " + response.status);
+  }, function (response) {
+    console.log("Error with Carrier Agencies data.");
   });
 
   $scope.propertyName = 'established';
@@ -46,28 +46,30 @@ app.controller("AgencyOverviewCtrl", function($scope, $http, $window, $sce, $loc
   $http.get("json/us-states.json")
   .then(function(response) {
     $scope.usStates = response.data;
-  }, function myError(response) {
-    console.log(response.statusText + " " + response.status);
+  }, function (response) {
+    console.log("Error with US States data.");
   });
 
   $http.get("json/policy-types.json")
   .then(function(response) {
     $scope.policyTypes = response.data;
-  }, function myError(response) {
-    console.log(response.statusText + " " + response.policyTypes);
+  }, function (response) {
+    console.log("Error with Policy Types data.");
   });
 
   $http.get("json/agency-licenses.json")
   .then(function(response) {
     $scope.agencyLicenses = response.data;
-  }, function myError(response) {
-    console.log(response.statusText + " " + response.agencyLicenses);
+  }, function (response) {
+    console.log("Error with Agency Licenses data.");
   });
 
   var url = "https://uinames.com/api/?ext&amount=20&region=united%20states&callback=JSON_CALLBACK";
   $http.jsonp(url)
-  .success(function(data) {
-    $scope.agencyAgents = data;
+  .then(function(response) {
+    $scope.agencyAgents = response.data;
+  }, function (response) {
+    console.log("Error with UI Names data.");
   });
 
   $scope.showStates = false;
